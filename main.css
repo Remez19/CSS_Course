@@ -5,6 +5,8 @@
   width: 100%; /* width - controls the overall width the element take on the screen*/
   height: 528px; /* height - controls the overall height the element take on the screen*/
   padding: 10px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .section-title {
@@ -15,6 +17,11 @@
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
+  position: absolute;
+  /* bottom: 10px; */
+  /* left: 40px; */
+  bottom: 4%;
+  left: 2%;
 }
 
 .plan__list {
