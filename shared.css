@@ -12,6 +12,8 @@ body {
   background: #2ddf5c;
   /* Fixed our Header */
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .main-header > div {
