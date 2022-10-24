@@ -27,8 +27,10 @@
   background: url("./freedom.jpg"); */
 
   /* Shorthand version */
-  background: url("./images/freedom.jpg") left 10% bottom 20% / cover no-repeat
-    border-box;
+  /* background: url("./images/freedom.jpg") left 10% bottom 20% / cover no-repeat
+    border-box; */
+
+  background-image: linear-gradient(0deg, green, transparent);
 
   width: 100%; /* width - controls the overall width the element take on the screen */
   height: 528px; /* height - controls the overall height the element take on the screen*/
