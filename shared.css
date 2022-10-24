@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -12,91 +13,112 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  height: 100%;
   width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
-  padding: 8px 16px;
   width: 100%;
-  background: #2ddf5c;
-  /* Fixed our Header */
   position: fixed;
   top: 0;
   left: 0;
+  background: #2ddf5c;
+  padding: 0.5rem 1rem;
   z-index: 1;
 }
 
 .main-header > div {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
 }
-.main-hrader__brand {
-  color: #0e4f1f; /* the color of the text*/
-  /* the style of the text (underline, bold, ...)*/
+
+.main-header__brand {
+  color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
-  height: 31px;
-  width: 30px;
-  /* width: 40px; */
+  font-size: 1.5rem;
+  height: 1.5rem;
+  /* width: 20px; */
   display: inline-block;
 }
 
-.main-hrader__brand img {
-  /* Styling the icon */
+.main-header__brand img {
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 
-/* The main navigation <nav></nav> */
 .main-nav {
-  vertical-align: middle;
   display: inline-block;
-  text-align: right; /* Will treat all the inline elements as text */
+  text-align: right;
   width: calc(100% - 74px);
+  vertical-align: middle;
 }
 
-/* The list of items in nav <ul></ul> */
 .main-nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* The main list items <li></li> */
+
 .main-nav__item {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-nav__item a {
   text-decoration: none;
-  /* padding-right: 15px; */
   color: #0e4f1f;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 0.2rem 0;
 }
 
-/* Pseudo class to react in mouse hover event */
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
   color: white;
   background: #ff1b68;
-  padding: 8px 16px;
-  /* border radius will round the corners */
+  padding: 0.5rem 1rem;
   border-radius: 8px;
 }
+
 .main-nav__item--cta a:hover,
-main-nav__item--cta a:active {
+.main-nav__item--cta a:active {
   color: #ff1b68;
   background: white;
   border: none;
+}
+
+.main-footer {
+  background: black;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
 }
 
 .button {
@@ -104,7 +126,7 @@ main-nav__item--cta a:active {
   color: white;
   font: inherit;
   border: 1.5px solid #0e4f1f;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
@@ -118,32 +140,4 @@ main-nav__item--cta a:active {
 
 .button:focus {
   outline: none;
-}
-
-.main-footer {
-  background: black;
-  margin-top: 48px;
-  padding: 32px;
-}
-
-.main-footer__links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.main-footer__link {
-  display: inline-block;
-  margin: 0 16px;
-}
-
-.main-footer__link a {
-  color: white;
-  text-decoration: none;
-}
-
-.main-footer__link a:hover,
-.main-footer__link a:active {
-  color: #ccc;
 }
