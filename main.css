@@ -142,6 +142,7 @@ key-features__list {
   border-radius: 50%;
   height: 128px;
   margin: 0 auto;
+  padding: 22px;
 }
 
 .key-features__description {
