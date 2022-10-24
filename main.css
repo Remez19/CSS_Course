@@ -1,7 +1,30 @@
 #product-overview {
+  /* Sets a background image */
+  background-image: url("./images/freedom.jpg");
+
+  /* Sets the size of the background */
+  background-size: cover;
+
+  /* Controls the position of the background */
+  background-position: left 10% bottom 20%;
+
+  /* Controls if repeating the image is needed */
+  background-repeat: no-repeat;
+
+  background-origin: border-box;
+  background-clip: border-box;
+
+  border: 5px dashed red;
+
+  /* Sets the color of the background */
+  /* In case we use a background image the color */
+  /* will not be applied */
+  /* background-color: red; */
+
   /* The "url()" let us use to refrence image file */
   /* which will load. */
-  background: url("./freedom.jpg");
+  /* background: url("./freedom.jpg"); */
+
   width: 100%; /* width - controls the overall width the element take on the screen*/
   height: 528px; /* height - controls the overall height the element take on the screen*/
   padding: 10px;
