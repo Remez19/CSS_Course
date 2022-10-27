@@ -5,50 +5,6 @@
   margin: 15px;
 } */
 
-/* -------- MY STYLES -------- */
-/* 
-.plan-detail {
-  background: #d5ffdc;
-  border: 4px solid #0e4f1f;
-  margin: 50px 0;
-  padding: 32px 48px;
-  width: 50%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.paln-detail__title {
-  color: black;
-}
-
-.plan-detail__subtitle {
-  color: rgb(164, 164, 164);
-  font-weight: bold;
-}
-
-.paln-detail__description {
-  background: white;
-  color: black;
-  border: 2px solid black;
-  padding: 12px 10px;
-  font-size: 11px;
-}
-
-.plan-detail-premium {
-  background: #0e4f1f;
-  margin: 50px 0;
-  padding: 32px 48px;
-  width: 50%;
-}
-
-.paln-detail__title-premium {
-  color: white;
-} */
-
-/* -------- MY STYLES -------- */
-
 main {
   padding-top: 2rem;
 }
