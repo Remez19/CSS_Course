@@ -25,9 +25,10 @@
   left: 3%;
   font-size: 1.6rem;
 }
+
 /* in the () we specify a condition and, if the condition is met  */
 /* than the code will excute */
-/* in this example: if the size of our screen is <= 40rem than styles 
+/* in this example: if the size of our screen is >= 40rem than styles 
 will be applied */
 @media (min-width: 40rem) {
   #product-overview {
@@ -36,6 +37,16 @@ will be applied */
   }
   #product-overview h1 {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  #product-overview {
+    height: 50vh;
+    background-position: 50% 25%;
+  }
+  #product-overview h1 {
+    font-size: 5rem;
   }
 }
 
