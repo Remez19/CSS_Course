@@ -47,4 +47,3 @@ toggleButton.addEventListener("click", () => {
   mobileNav.classList.add("open");
   backdrop.classList.add("open");
 });
-// Reso
