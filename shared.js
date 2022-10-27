@@ -6,22 +6,44 @@
 var backdrop = document.querySelector(".backdrop");
 var modal = document.querySelector(".modal");
 var planButtons = document.querySelectorAll(".plan button");
+var toggleButton = document.querySelector(".toggle-button");
+var mobileNav = document.querySelector(".mobile-nav");
 
-backdrop.addEventListener("click", hideModal);
+backdrop.addEventListener("click", () => {
+  // mobileNav.style.display = "none";
+  mobileNav.classList.remove("open");
+  hideModal();
+});
 
 var modalButtonNo = document.querySelector(".modal__action--negative");
-modalButtonNo.addEventListener("click", hideModal);
+if (modalButtonNo) {
+  modalButtonNo.addEventListener("click", hideModal);
+}
 
 for (const button of planButtons) {
   button.addEventListener("click", () => {
-    backdrop.style.display = "block";
-    modal.style.display = "block";
+    // backdrop.style.display = "block";
+    // modal.style.display = "block";
+    modal.classList.add("open");
+    backdrop.classList.add("open");
   });
 }
 // setting the diplay propery value.
 // backdrop.style.display = "block";
 
 function hideModal() {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
+  // backdrop.style.display = "none";
+
+  // modal.style.display = "none";
+  // Removes a CSS class to the element.
+  if (modal) {
+    modal.classList.remove("open");
+  }
+  backdrop.classList.remove("open");
 }
+
+toggleButton.addEventListener("click", () => {
+  // Add a CSS class to the element.
+  mobileNav.classList.add("open");
+  backdrop.classList.add("open");
+});
