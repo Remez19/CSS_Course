@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+/* 
+@font-face {
+  font-family: "Some_Name_Of_Our_Choice";
+  src: url("The_Path_To_The_ttf_File");
+} */
+
 * {
   box-sizing: border-box;
 }
