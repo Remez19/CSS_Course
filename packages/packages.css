@@ -78,7 +78,7 @@ main {
     - font-family -> Montserrat
     - line-height -> /2 
   */
-  font: 700 1.2rem Montserrat;
+  font-size: 1.2rem;
 }
 
 .clearfix {
