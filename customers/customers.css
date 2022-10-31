@@ -60,6 +60,11 @@ main {
 
 .testimonial__text {
   margin: 0.2rem;
+  /* Controls the spacing between the letters */
+  /* letter-spacing: 5px; */
+
+  /* Controls the way the whitespacing in the element is treated. */
+  /* white-space: pre; */
 }
 
 @media (min-width: 40rem) {

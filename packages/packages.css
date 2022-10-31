@@ -62,6 +62,13 @@ main {
   font-size: 1.2rem;
   color: #0e4f1f;
   background: white;
+
+  /* We can add line under,thourgh, upline . we can add color */
+  /* and style like dotted   */
+  /* text-decoration: underline dotted red; */
+
+  /* Adding a text shadow to the text */
+  /* text-shadow: 2px 2px 7px rgb(185, 180, 180); */
 }
 
 .clearfix {
