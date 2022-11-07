@@ -177,7 +177,19 @@ will be applied */
 
 .modal {
   position: fixed;
-  display: none;
+  /* opacity,transform are two properties we can use  */
+  /* for transitions  */
+  opacity: 0;
+  transform: translateY(-3rem);
+
+  /* transition can have four values */
+  /* The first one is required and that is which property to watch */
+  /* The second value is the duration */
+  /* The third value is timing function that allows us to control */
+  /* how fast this transition should go */
+  /* ease-out - start fast and end slow */
+  /* The fourth value is delay to wait until the transition is started  */
+  transition: opacity 0.2s ease-out 1s, transform 500ms ease-out;
   z-index: 200;
   top: 20%;
   left: 30%;
