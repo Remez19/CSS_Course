@@ -129,6 +129,16 @@ main {
   border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+  /* First value - the animation name (keyframes we define) */
+  /* Second value - the duration of the animation  */
+  /* Third value - delay  */
+  /* Fourth value - iterations */
+  /* Fifth value - the direction (from to / to from)  */
+  /* Sixth value - keep the finale values of the animation or not  */
+  animation: wiggle 200ms 3s 8 alternate;
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
@@ -271,4 +281,14 @@ main {
   opacity: 1 !important;
   transform: translateY(0) !important;
   /* transform: translateX(0) !important; */
+}
+
+@keyframes wiggle {
+  /* Two keyframes the start and the end */
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
 }
