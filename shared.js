@@ -8,6 +8,8 @@ var modal = document.querySelector(".modal");
 var planButtons = document.querySelectorAll(".plan button");
 var toggleButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
+var ctaButton = document.querySelector(".main-nav__item--cta");
+var packages = document.querySelectorAll(".package");
 
 backdrop.addEventListener("click", () => {
   // mobileNav.style.display = "none";
@@ -19,6 +21,12 @@ var modalButtonNo = document.querySelector(".modal__action--negative");
 if (modalButtonNo) {
   modalButtonNo.addEventListener("click", hideModal);
 }
+
+// for (const package of packages) {
+//   package.addEventListener("animationend", (event) => {
+//     package.style.animation = "push-down 0.5s ease-out forwards";
+//   });
+// }
 
 for (const button of planButtons) {
   button.addEventListener("click", () => {
@@ -56,3 +64,18 @@ toggleButton.addEventListener("click", () => {
     backdrop.classList.add("open");
   }, 10);
 });
+
+// ctaButton.addEventListener("animationstart", (event) => {
+//   console.log("Animation started");
+//   console.log(event);
+// });
+
+// ctaButton.addEventListener("animationend", (event) => {
+//   console.log("Animation end");
+//   console.log(event);
+// });
+
+// ctaButton.addEventListener("animationiteration", (event) => {
+//   console.log("Animation iteration");
+//   console.log(event);
+// });
