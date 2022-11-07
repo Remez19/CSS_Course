@@ -25,7 +25,10 @@ for (const button of planButtons) {
     // backdrop.style.display = "block";
     // modal.style.display = "block";
     modal.classList.add("open");
-    backdrop.classList.add("open");
+    backdrop.style.display = "block";
+    setTimeout(() => {
+      backdrop.classList.add("open");
+    }, 10);
   });
 }
 // setting the diplay propery value.
@@ -40,10 +43,16 @@ function hideModal() {
     modal.classList.remove("open");
   }
   backdrop.classList.remove("open");
+  setTimeout(() => {
+    backdrop.style.display = "none";
+  }, 200);
 }
 
 toggleButton.addEventListener("click", () => {
   // Add a CSS class to the element.
   mobileNav.classList.add("open");
-  backdrop.classList.add("open");
+  backdrop.style.display = "block";
+  setTimeout(() => {
+    backdrop.classList.add("open");
+  }, 10);
 });
