@@ -136,7 +136,7 @@ main {
   /* Fourth value - iterations */
   /* Fifth value - the direction (from to / to from)  */
   /* Sixth value - keep the finale values of the animation or not  */
-  animation: wiggle 200ms 3s 8 alternate;
+  animation: wiggle 400ms 3s 8 ease-out;
 }
 
 .main-nav__item--cta a,
@@ -285,10 +285,13 @@ main {
 
 @keyframes wiggle {
   /* Two keyframes the start and the end */
-  from {
+  0% {
     transform: rotateZ(0);
   }
-  to {
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
     transform: rotateZ(10deg);
   }
 }
